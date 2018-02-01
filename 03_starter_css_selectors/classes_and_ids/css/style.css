@@ -1,0 +1,66 @@
+body {
+  font-family: "Lato", serif;
+  line-height: 1.4;
+  margin: 3em;
+  color: #2F3340;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  width: 31%;
+  margin: 30px 0;
+}
+
+p span {
+  display: inline-block;
+  width: auto;
+  margin: 0 10px;
+}
+
+p span:nth-child(1) {
+  color: #00A6B3;
+}
+
+p span:nth-child(2) {
+  color: #F15B31;
+}
+
+p span:nth-child(3) {
+  color: #C879B2;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+
+/*------------------------------------------------------------------
+  Write your code here!
+-------------------------------------------------------------------*/
+/*1. Give ALL list items a 2px solid #00A6B3 border.*/
+li {border: 2px solid #00A6B3
+
+}
+
+/*2. In your HTML - Add a class of gourmet to the two gourmet ice cream items.
+Here in your CSS: Now give all list items with a class of gourmet
+a 2px solid #C879B2 border. */
+
+.gourmet {border: 2px solid #C879B2}
+
+
+/*3. In your HTML - Give the daily special an id of special.
+Here in your CSS: Now style any the item that has an id special with
+a 2px solid #F15B31 border. */
+
+#special {border:2px solid #F15B31}

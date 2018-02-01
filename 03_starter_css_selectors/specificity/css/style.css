@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+
+
+/*   Instructions: Make sure to write your code UNDER the comment for each step (the dashed line).
+DO NOT write code inside the comments.  */
+
+/* ----------------------------------------------------------------------------------------
+Step 1: Inheritance
+
+Select the body element and add the following styles:
+	-	Change the color to #3A322F (dark grey)
+	-	Change the background-color to #EEE0D3 (beige)
+	-	Change the font-family to 'Lato', sans-serif.
+Bonus: try adding other styles to the body such as font-style, text-align, and line-height and see how they are applied.
+-------------------------------------------------------------------------------------------*/
+body{background-color: #EEE0D3;
+      color:#3A322F;
+      font-family: "Lato", sans-serif;}
+
+
+
+/* ----------------------------------------------------------------------------------------
+Step 2: Element Selectors
+Select the p elements and change their color to #59B776 (light green).
+Select the a elements and change their color to #FFA300 (light orange) and remove their underline.
+-------------------------------------------------------------------------------------------*/
+p {color}
+
+
+
+/* ----------------------------------------------------------------------------------------
+Step 3: Nested Selectors
+Select the paragraph in the header and change its color to #F84914 (bright orange).
+-------------------------------------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------------------------------
+Step 4: Classes and IDs
+Select all elements with a class of .general-info and set their color to #B69843 (green-brown).
+-------------------------------------------------------------------------------------------*/
