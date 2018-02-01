@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
 
+@import url('https://fonts.googleapis.com/css?family=Lato%7CRaleway:400,600');
 
 body {
+	font-family: "Raleway", sans-serif;
 	text-align: center;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 1200px;
 }
 
 nav{
@@ -14,7 +15,7 @@ nav{
 		font-size: 16px;
 		text-align: center;
 		text-transform: uppercase;
-		margin-top: 30px;
+		margin-top: 20px;
 }
 
 nav a{
@@ -25,23 +26,26 @@ nav a{
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 50px;
+	padding: 0px 70px 0px 70px;
 
+}
+
+nav a:hover {
+    color: #44545E;
 }
 
 /* Fix for responsive images */
 img {
 	max-width: 100%;
+	align-items: center;
 }
 
 header{
-	font-family:"Raleway", sans-serif;
-	font-weight: 600;
-	color:#44545E;
-	font-size: 37px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/blog_header_bg.jpg");
+	background-size: cover;
+	background-color: #cccccc;
 }
 
 h1{
@@ -50,20 +54,19 @@ h1{
 	color:#44545E;
 	font-size: 37px;
 	text-align: center;
-	text-decoration: none;
 	text-transform: uppercase;
+	padding-top:150px;
 }
 
 h1 a {
 	font-family:"Raleway", sans-serif;
-	font-weight: 600;
-	color:#44545E;
+	font-weight: 400;
+	color:white;
 	font-size: 37px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 14px;
+	letter-spacing: 15px;
 }
 
 h2{
@@ -71,9 +74,7 @@ h2{
 	font-weight: 600;
 	color:#44545E;
 	font-size: 23px;
-	text-decoration: none;
 	text-transform: uppercase;
-	text-decoration: none;
 	letter-spacing: 1px;
 }
 
@@ -82,24 +83,26 @@ h3{
 	font-weight: 600;
 	color:#44545E;
 	font-size: 18px;
-	text-decoration: none;
 	text-transform: uppercase;
-	text-decoration: none;
 	letter-spacing: 1px;
 }
 
 article {
-	max-width: 95%;
+	max-width: 80%;
 	text-align: left;
 	margin: 0 auto;
 	color: #44545E;
 	font-family:"Lato", sans-serif;
 	font-size: 15px;
 	font-weight:400;
-	padding: 10px;
+	padding: 5px;
 	letter-spacing: 1px;
 	line-height: 20px;
 
+}
+
+ul{
+	padding-left: 15px;
 }
 
 li a {
@@ -110,6 +113,7 @@ li a {
 	text-decoration: none;
 	line-height: 30px;
 	text-align: left;
+	margin: 0 auto;
 }
 
 footer {
@@ -118,25 +122,29 @@ footer {
 		font-family: "Lato", sans-serif;
 		font-size: 15px;
 		font-weight:400;
-		padding: 30px;
+		padding-top: 50px;
+		padding-bottom:3px;
+		text-align: center;
 
 }
 
 footer a {
 	color:#44545E;
-	font-family: "Raleway", sans-serif;
-	font-size: 15px;
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
 	font-weight:600;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 25px;
 }
 
 footer p {
-	color:#44545E;
 	font-family: "Lato", sans-serif;
 	font-size: 15px;
 	font-weight:400;
+	text-align: center;
+	padding: 0px 25px 0px 25px;
 }
 
 hr {
@@ -149,13 +157,47 @@ hr {
 	color:#44545E;
 	font-family: "Lato", sans-serif;
 	font-size: 15px;
-	font-weight:600;
+	font-weight:400;
 	text-decoration: none;
 	text-transform: none;
 
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: 2000px;
 	margin: 0 auto;
+}
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: 60% 35%;
+	grid-column-gap: 45px;
+	align-items: baseline;
+
+}
+
+#emailbutton{
+	display: inline-block;
+	background-color: white;
+	padding: 8px 110px 8px 110px;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	color: #44545E;
+	letter-spacing: 2px;
+
+
+}
+
+#contactbutton{
+	display: inline-block;
+	border: 2px solid #44545E;
+	padding: 8px 35px 8px 35px;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	color: #44545E;
+	margin-left: 30px;
+	letter-spacing: 2px;
+
 }
