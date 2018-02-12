@@ -271,9 +271,14 @@ hr {
 #arrows{
 	color: #44545E;
 }
+
+#arrowbutton{
+	display: none;
+}
 @media screen and (min-width: 600px){
 	#arrows{
 		display:none;
+		z-index: 0;
 	}
 }
 
