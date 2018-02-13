@@ -273,7 +273,8 @@ hr {
 }
 
 #arrowbutton{
-	display: none;
+	display:relative;
+	z-index: 7;
 }
 @media screen and (min-width: 600px){
 	#arrows{
@@ -372,6 +373,8 @@ hr {
 	header{
 	  height:200px;
 		margin-bottom: 20px;
+		width:100%;
+		background-size:contain;
 
 	  }
 
