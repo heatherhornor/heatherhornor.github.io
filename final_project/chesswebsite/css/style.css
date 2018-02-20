@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Didact+Gothic');
+body {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 13px;
+}
+
+header{
+  height:250px;
+  width:100%;
+  background-image:url("../images/chesshand2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+  margin-bottom:15px;
+}
+
+h1{
+  padding-top: 85px;
+  text-align: center;
+}
+
+h1 a{
+	font-family:"Cinzel", serif;
+	font-weight: 900;
+	color:#193768;
+	font-size: 80px;
+	text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 6px;
+}
+
+h2{
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+	font-weight: 700;
+	color:#193768;
+  text-align:center;
+}
+
+h3{
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+	font-weight: 700;
+	color:#193768;
+  text-align:left;
+  margin-left: 30px;
+}
+
+h4{
+  font-family: "Didact Gothic" sans-serif;
+  font-weight:800;
+  font-size:20px;
+  letter-spacing: 2px;
+  color:#840202;
+}
+
+p{
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 14px;
+	font-weight: 700;
+	color:#cccccc;
+}
+
+nav{
+		text-align: center;
+    background-color: white;
+    top: 0;
+    padding:5px 0px 5px 0px;
+		z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	  grid-column-gap: 25px;
+	  align-items: baseline;
+	  max-width: 100%;
+	  margin-bottom:10px;
+    position:sticky;
+}
+
+nav a{
+	font-family: "Didact Gothic", sans-serif;
+	font-weight: 900;
+	color:white;
+  background-color: #193768;
+  border: 2px solid #ffc700;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+  transition: all .5s ease-in-out;
+  padding:20px 5px 20px 5px;
+}
+
+nav a:hover{
+  background-color:#840202;
+  border: 2px solid #193768;
+}
+
+main {
+  align-items: center;
+	max-width: 90%;
+	margin: 0 auto;
+  text-align: center;
+  background-color: #cccccc;
+  padding: 20px;
+}
+
+input[type=submit] {
+    background-color: #ffffff;
+    font-family: "Didact Gothic" sans-serif;
+    font-size: 16px;
+  	font-weight: 400;
+    border: 2px solid #193768;
+    color: #193768;
+    height: 60px;
+    width: 300px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+input[type=submit]:hover{
+    background-color: #193768;
+    font-family: "Didact Gothic" sans-serif;
+    font-size: 16px;
+  	font-weight: 400;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    height: 60px;
+    width: 300px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+footer{
+  height:100px;
+  max-width:1400px;
+  background-color: #193768;
+  margin-top: 5px;
+}
+
+.wrapper{
+  max-width:1400px;
+  margin:0 auto;
+  padding:5px;
+}
+
+.border{
+  border-bottom: 6px solid #840202;
+  height:80px;
+  margin-top:10px;
+  text-align: center;
+}
+
+.schedule{
+  border-bottom: 6px solid #840202;
+  height:80px;
+  margin-top:10px;
+}
+
+.registrationgrid{
+	display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 10px;
+	align-items: center;
+	margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.container1{
+  background-color: #cccccc;
+  max-width: 90%;
+  margin:0 auto;
+  text-align:center;
+  padding: 20px;
+}
+
+.apply{
+  align-items: center;
+	max-width: 90%;
+	margin: 0 auto;
+  text-align: center;
+  background-color: #cccccc;
+  padding: 20px;
+}
+
+#scheduleheader{
+  display:block;
+}
+
+#arrowbutton{
+  text-align: left;
+  z-index:10;
+  margin: 3px;
+
+}
+
+@media screen and (min-width:600px) {
+  #arrowbutton{
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 1068px){
+  h1 a{
+  	font-family:"Cinzel", serif;
+  	font-weight: 700;
+  	color:#193768;
+  	font-size: 50px;
+  }
+
+  h3{
+		font-size: 12px;
+    text-align: center;
+	}
+  nav{
+    grid-column-gap: 5px;
+  }
+  nav a{
+    font-size: 12px;
+    font-family: "Didact Gothic" sans-serif;
+    padding:10px 10px 10px 10px;
+  }
+
+}
+@media screen and (max-width: 600px){
+
+  header{
+    height:100px;
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    padding-top:50px;
+    margin:0 auto;
+  }
+
+  h1 a{
+    font-size:30px;
+    letter-spacing: 2px;
+  }
+  h3{
+    margin:0 auto;
+    padding:0px 5px 0px 5px;
+  }
+
+  nav{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2px;
+    margin: 0 auto;
+    padding:0px;
+    background-color:#193768;;
+  }
+
+  nav a{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 13px;
+    text-align:left;
+    letter-spacing: 3px;
+    background-color: #840202;
+    color:white;
+    border: 1px solid white;
+    padding:4px;
+  }
+
+  nav a:hover{
+    background-color:#193768;
+    color:white;
+  }
+
+  iframe{
+    height:400px;
+  }
+
+  footer{
+    height:60px;
+    background-color: #193768;
+    margin:0px;
+  }
+  #arrowbutton{
+    display:block;
+    position: sticky;
+    top:0;
+  }
+
+  #scheduleheader{
+    display:none;
+  }
+
+  .registrationgrid{
+    grid-template-columns: 1fr;
+    padding:0px;
+  }
+  .border{
+    border:none;
+    height:60px;
+    margin-top:0px;
+  }
+  .schedule{
+    text-align:center;
+    height:40px;
+    margin-top:0px;
+  }
+
+}
