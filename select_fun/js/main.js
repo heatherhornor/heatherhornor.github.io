@@ -20,9 +20,9 @@
     $('#box3 span').addClass('fun');
     $('h2').slideUp(100);
     $('#row3 div').addClass('selected');
-
+    $(".add-para").append("<b> Time to Party!</b>");
+    $("#box12").prepend("<h4> Wild!</h4>");
   });
-
 
 // 3. When the anchor in #box2 is clicked (hint: your selector could be $('#box2 a') )
   // a. Fade in the footer slowly
@@ -52,5 +52,6 @@
     $('#box3 span').removeClass('fun');
     $('#row3 div').removeClass('selected');
     $('h2').slideDown(100);
-
+    $(".add-para b").remove();
+    $("#box12 h4").remove();
   });
