@@ -5,18 +5,37 @@ body {
 }
 
 header{
-  height:250px;
+  display:fixed;
+  height:200px;
   width:100%;
   background-image:url("../images/chesshand2.jpg");
   background-size: cover;
   background-position: center;
   background-color: #cccccc;
   margin-bottom:15px;
+  transition: all 100ms ease-in-out;
+  top:0;
+}
+.littleHead{
+  height:100px;
+  max-width:1400px;
+  margin:0 auto;
+  margin-bottom:0px;
+  padding-top: 0px;
+  position: fixed;
+  top:0;
+  z-index:6;
 }
 
 h1{
-  padding-top: 85px;
+  padding-top: 50px;
   text-align: center;
+  transition: all .7s linear;
+}
+
+.littleHead h1 {
+  padding-top: 15px;
+  margin:0;
 }
 
 h1 a{
@@ -27,6 +46,11 @@ h1 a{
 	text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 6px;
+  transition: all .7s linear;
+}
+
+.littleHead h1 a {
+  	font-size: 40px;
 }
 
 h2{
@@ -66,16 +90,15 @@ nav{
     background-color: white;
     top: 0;
     padding:5px 0px 5px 0px;
-		z-index: 1;
+		z-index: 9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 	  grid-column-gap: 25px;
 	  align-items: baseline;
 	  max-width: 100%;
 	  margin-bottom:10px;
-    position:sticky;
+    transition: all .7s ease-in-out;
 }
-
 nav a{
 	font-family: "Didact Gothic", sans-serif;
 	font-weight: 900;
@@ -101,46 +124,67 @@ main {
   text-align: center;
   background-color: #cccccc;
   padding: 20px;
+  z-index:2;
 }
 
 input[type=submit] {
-    background-color: #ffffff;
-    font-family: "Didact Gothic" sans-serif;
-    font-size: 16px;
-  	font-weight: 400;
-    border: 2px solid #193768;
-    color: #193768;
-    height: 60px;
-    width: 300px;
-    padding-left: 20px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
+  background-color: #ffffff;
+  font-family: "Didact Gothic" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #193768;
+  color: #193768;
+  height: 60px;
+  width: 300px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
 }
 
 input[type=submit]:hover{
-    background-color: #193768;
-    font-family: "Didact Gothic" sans-serif;
-    font-size: 16px;
-  	font-weight: 400;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    height: 60px;
-    width: 300px;
-    padding-left: 20px;
-    cursor: pointer;
+  background-color: #193768;
+  font-family: "Didact Gothic" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  height: 60px;
+  width: 300px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+img{
+  max-width:300px;
+  
+  padding-bottom:30px;
 }
 
 footer{
-  height:100px;
+  display:flex;
+  height:30px;
+  width:100%;
   max-width:1400px;
   background-color: #193768;
-  margin-top: 5px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  bottom:0px;
+  position: fixed;
+  margin:0 auto;
+
 }
 
 .wrapper{
   max-width:1400px;
   margin:0 auto;
   padding:5px;
+}
+
+.navOpac{
+  opacity:.95;
+  background-color: #cccccc;
+  z-index:10;
 }
 
 .border{
@@ -163,15 +207,23 @@ footer{
 	align-items: center;
 	margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 80px 20px;
 }
 
 .container1{
   background-color: #cccccc;
   max-width: 90%;
+  min-height:1000px;
   margin:0 auto;
   text-align:center;
-  padding: 20px;
+  padding: 10px;
+  z-index:0;
+}
+
+.containerSlide{
+  transform: translateY(100px);
+  z-index:0;
+  transition: all .5s ease-in-out;
 }
 
 .apply{
@@ -182,16 +234,117 @@ footer{
   background-color: #cccccc;
   padding: 20px;
 }
+.contactGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+  align-items: top;
+	margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  height:400px;
+}
+.aboutGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+	margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  height:400px;
+}
+
+.info h3{
+  padding:25px;
+  align-items:center;
+  text-align: justify;
+  text-justify: inter-word;
+  margin:0 auto;
+}
+
+
+/* .scrolled{
+  display:none;
+} */
+
+.clubQ1 , .clubQ2{
+  background-color: #ffffff;
+  font-family: "Didact Gothic" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #193768;
+  color: #193768;
+  height: 60px;
+  width: 300px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.clubQ1:hover , .clubQ2:hover{
+  background-color: #193768;
+  font-family: "Didact Gothic" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  height: 60px;
+  width: 300px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.modal-background1 , .modal-background2 {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index:499;
+}
+
+.modal-show{
+  display:flex;
+  z-index:501;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.modal-clubQ1 , .modal-clubQ2{
+  padding: 40px 20px;
+  color: #193768;
+  background-color: white;
+  width: 60%;
+  border: 2px solid #193768;
+  z-index:500;
+}
+
+.modal-clubQ1 h4 a , .modal-clubQ2 h4 a{
+  color: #193768;
+  text-decoration: none;
+  padding:10px;
+}
+
+.bigNav{
+  display:block;
+  position:sticky;
+  top:100px;
+  z-index: 11;
+}
 
 #scheduleheader{
   display:block;
 }
 
 #arrowbutton{
+  display:block;
   text-align: left;
-  z-index:10;
   margin: 3px;
-
 }
 
 @media screen and (min-width:600px) {
@@ -222,12 +375,37 @@ footer{
     padding:10px 10px 10px 10px;
   }
 
+  .contactGrid{
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    height:800px;
+    padding:10px;
+  }
+  .aboutGrid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding: 10px;
+  }
+
+  .clubQ1 , .clubQ2{
+    height: 40px;
+    width: 200px;
+    font-size: 12px;
+  }
+
+  .clubQ1:hover , .clubQ2:hover{
+    height: 40px;
+    width: 200px;
+    font-size: 12px;
+  }
+
 }
 @media screen and (max-width: 600px){
 
   header{
     height:100px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    margin-bottom:0px;
   }
 
   h1 {
@@ -250,7 +428,16 @@ footer{
     grid-row-gap: 2px;
     margin: 0 auto;
     padding:0px;
-    background-color:#193768;;
+    background-color:#193768;
+
+  }
+
+  .bigNav{
+    display:none;
+    position:sticky;
+    top: 40px;
+    width:100%;
+    z-index:7;
   }
 
   nav a{
@@ -273,25 +460,41 @@ footer{
     height:400px;
   }
 
-  footer{
-    height:60px;
-    background-color: #193768;
-    margin:0px;
-  }
   #arrowbutton{
     display:block;
     position: sticky;
     top:0;
+    z-index:9;
+  }
+  h2{
+    font-weight:600;
+    font-size:12px;
+    margin:2px;
+  }
+  h4 {
+    font-weight:600;
+    font-size:12px;
+    margin:2px;
   }
 
-  #scheduleheader{
-    display:none;
+  img{
+    width:200px;
+    padding:10px;
   }
 
   .registrationgrid{
     grid-template-columns: 1fr;
     padding:0px;
   }
+
+  .contactGrid{
+    height:400px;
+  }
+  .aboutGrid{
+    grid-template-columns:1fr;
+
+  }
+
   .border{
     border:none;
     height:60px;
@@ -301,6 +504,36 @@ footer{
     text-align:center;
     height:40px;
     margin-top:0px;
+  }
+  .littleHead{
+    height:35px;
+    margin-bottom:2px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    position: fixed;
+    top:0;
+    z-index:6;
+  }
+  .littleHead h1 {
+    padding-top: 0px;
+    margin:0;
+  }
+  .littleHead h1 a {
+    font-size: 18px;
+  }
+  .containerSlide{
+    transform: translateY(15px);
+    z-index:0;
+    padding-top:10px;
+    padding-bottom:40px;
+  }
+  .modal-clubQ1 , .modal-clubQ2{
+    padding: 50px 10px;
+    color: #193768;
+    background-color: white;
+    width: 80%;
+    border: 2px solid #193768;
+    z-index:500;
   }
 
 }
