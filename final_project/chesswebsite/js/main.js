@@ -32,6 +32,7 @@ $(window).on('scroll', function () {
     $('header').addClass('littleHead');
     $('nav').addClass('navOpac');
     $('.container1').addClass('containerSlide');
+    $('.container2').addClass('containerSlide');
   }
   // else {
   //   $('header').removeClass('littleHead');
