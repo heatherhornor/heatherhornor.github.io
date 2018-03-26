@@ -1,10 +1,4 @@
-// (window).on('scroll', function () {
-// 	var distanceScrolled = $(window).scrollTop();
-//
-//   if(distanceScrolled> 50) {
-//     $('#arrowbutton').addClass(arrowBg);
-//   }
-// });
+
 $('.clubQ1').on('click', function () {
 	$('.modal-background1').css("display", "flex").hide().fadeIn();
 });
@@ -32,11 +26,5 @@ $(window).on('scroll', function () {
     $('header').addClass('littleHead');
     $('nav').addClass('navOpac');
     $('.container1').addClass('containerSlide');
-    $('.container2').addClass('containerSlide');
   }
-  // else {
-  //   $('header').removeClass('littleHead');
-  //   $('nav').removeClass('navOpac');
-  //   $('.container1').removeClass('containerSlide');
-  // }
 });

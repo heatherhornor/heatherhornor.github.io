@@ -5,14 +5,14 @@ body {
 }
 
 header{
-  display:fixed;
+  display:block;
   height:200px;
   width:100%;
   background-image:url("../images/chesshand2.jpg");
   background-size: cover;
   background-position: center;
   background-color: #cccccc;
-  margin-bottom:15px;
+  /* margin-bottom:15px; */
   transition: all 100ms ease-in-out;
   top:0;
 }
@@ -20,10 +20,11 @@ header{
   height:100px;
   max-width:1400px;
   margin:0 auto;
-  margin-bottom:0px;
   padding-top: 0px;
   position: fixed;
   top:0;
+  left:0;
+  right:0;
   z-index:6;
 }
 
@@ -39,33 +40,33 @@ h1{
 }
 
 h1 a{
-	font-family:"Cinzel", serif;
-	font-weight: 900;
-	color:#193768;
-	font-size: 80px;
-	text-transform: uppercase;
+  font-family:"Cinzel", serif;
+  font-weight: 900;
+  color:#193768;
+  font-size: 80px;
+  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 6px;
   transition: all .7s linear;
 }
 
 .littleHead h1 a {
-  	font-size: 40px;
+  font-size: 40px;
 }
 
 h2{
   font-family: "Didact Gothic", sans-serif;
   font-size: 18px;
-	font-weight: 700;
-	color:#193768;
+  font-weight: 700;
+  color:#193768;
   text-align:center;
 }
 
 h3{
   font-family: "Didact Gothic", sans-serif;
   font-size: 18px;
-	font-weight: 700;
-	color:#193768;
+  font-weight: 700;
+  color:#193768;
   text-align:left;
   margin-left: 30px;
 }
@@ -81,33 +82,33 @@ h4{
 p{
   font-family: "Didact Gothic", sans-serif;
   font-size: 14px;
-	font-weight: 700;
-	color:#cccccc;
+  font-weight: 700;
+  color:#cccccc;
 }
 
 nav{
-		text-align: center;
-    background-color: white;
-    top: 0;
-    padding:5px 0px 5px 0px;
-		z-index: 9;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-	  grid-column-gap: 25px;
-	  align-items: baseline;
-	  max-width: 100%;
-	  margin-bottom:10px;
-    transition: all .7s ease-in-out;
+  text-align: center;
+  background-color: white;
+  top: 0;
+  padding:5px 0px 5px 0px;
+  z-index: 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  align-items: baseline;
+  max-width: 100%;
+  margin-bottom:10px;
+  transition: all .7s ease-in-out;
 }
 nav a{
-	font-family: "Didact Gothic", sans-serif;
-	font-weight: 900;
-	color:white;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 900;
+  color:white;
   background-color: #193768;
   border: 2px solid #ffc700;
-	font-size: 18px;
-	text-align: center;
-	text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
   transition: all .5s ease-in-out;
   padding:20px 5px 20px 5px;
 }
@@ -119,8 +120,8 @@ nav a:hover{
 
 main {
   align-items: center;
-	max-width: 90%;
-	margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
   text-align: center;
   background-color: #cccccc;
   padding: 20px;
@@ -166,11 +167,8 @@ footer{
   width:100%;
   max-width:1400px;
   background-color: #193768;
-  /* margin-top: 20px; */
   align-items: center;
   justify-content: center;
-  bottom:0px;
-  position: fixed;
   margin:0 auto;
 
 }
@@ -178,13 +176,12 @@ footer{
 .wrapper{
   max-width:1400px;
   margin:0 auto;
-  padding:5px;
+  padding:10px;
   text-align:center;
 }
 
 .navOpac{
   opacity:.95;
-  background-color: #cccccc;
   z-index:10;
 }
 
@@ -203,11 +200,11 @@ footer{
 
 .registrationgrid{
   background-color: #cccccc;
-	display: grid;
+  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-row-gap: 10px;
-	align-items: center;
-	margin: 0 auto;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
   padding: 20px 20px 80px 20px;
 }
@@ -219,6 +216,7 @@ footer{
   text-align:center;
   padding: 10px;
   z-index:0;
+  min-height: 90vh;
 }
 
 .container2{
@@ -231,15 +229,15 @@ footer{
 }
 
 .containerSlide{
-  transform: translateY(80px);
+  padding-top: 80px;
   z-index:0;
   transition: all .5s ease-in-out;
 }
 
 .apply{
   align-items: center;
-	max-width: 90%;
-	margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
   text-align: center;
   background-color: #cccccc;
   padding: 20px;
@@ -250,7 +248,7 @@ footer{
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 10px;
   align-items: center;
-	margin: 0 auto;
+  margin: 0 auto;
   text-align: center;
   padding: 40px;
   min-height:400px;
@@ -261,7 +259,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
-	margin: 0 auto;
+  margin: 0 auto;
   text-align: center;
   padding:0px 20px 40px 20px;
 
@@ -277,7 +275,7 @@ footer{
 
 
 /* .scrolled{
-  display:none;
+display:none;
 } */
 
 .clubQ1 , .clubQ2{
@@ -359,6 +357,9 @@ footer{
   text-align: left;
   margin: 3px;
 }
+iframe{
+  padding-top:10;
+}
 
 @media screen and (min-width:600px) {
   #arrowbutton{
@@ -369,16 +370,16 @@ footer{
 
 @media screen and (max-width: 1068px){
   h1 a{
-  	font-family:"Cinzel", serif;
-  	font-weight: 700;
-  	color:#193768;
-  	font-size: 50px;
+    font-family:"Cinzel", serif;
+    font-weight: 700;
+    color:#193768;
+    font-size: 50px;
   }
 
   h3{
-		font-size: 12px;
+    font-size: 12px;
     text-align: center;
-	}
+  }
   nav{
     grid-column-gap: 5px;
   }
@@ -389,17 +390,17 @@ footer{
   }
 
   .container1{
-    padding: 40px 10px 450px 10px;
+    min-height: calc(100vh);
+
   }
 
-  .container2{
-    padding: 10px 10px 40px 10px;
+  .containerSlide{
+    min-height: calc(100vh - 190px);
   }
 
   .contactGrid{
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
-    /* height:800px; */
     padding:10px;
   }
   .aboutGrid{
@@ -420,7 +421,8 @@ footer{
     font-size: 12px;
   }
   .apply{
-    padding:20px 20px 200px 20px;
+    padding:20px;
+    min-height: 100vh;
   }
 
 }
@@ -453,7 +455,6 @@ footer{
     margin: 0 auto;
     padding:0px;
     background-color:#193768;
-
   }
 
   .bigNav{
@@ -467,7 +468,7 @@ footer{
   nav a{
     font-family: "Didact Gothic", sans-serif;
     font-size: 13px;
-    text-align:left;
+    text-align:center;
     letter-spacing: 3px;
     background-color: #840202;
     color:white;
@@ -484,10 +485,10 @@ footer{
     height:600px;
   }
 
-  #arrowbutton{
+  #arrowbutton {
     display:block;
     position: sticky;
-    top:0;
+    top:5px;
     z-index:9;
   }
   h2{
@@ -505,15 +506,15 @@ footer{
     width:200px;
     padding:10px;
   }
+  .wrapper{
+    max-width:600px;
+  }
 
   .registrationgrid{
     grid-template-columns: 1fr;
     padding:0px;
   }
-
-  .contactGrid{
-    height:400px;
-  }
+  
   .aboutGrid{
     grid-template-columns:1fr;
   }
@@ -529,11 +530,10 @@ footer{
     margin-top:0px;
   }
   .littleHead{
-    height:35px;
-    margin-bottom:2px;
-    padding-bottom: 10px;
+    max-width:98%;
+    height:45px;
+    padding-bottom: 8px;
     padding-top: 0px;
-    position: fixed;
     top:0;
     z-index:6;
   }
@@ -545,14 +545,12 @@ footer{
     font-size: 18px;
   }
   .container1{
-    padding: 30px 10px 130px 10px;
+    padding: 10px;
+    min-height: 100vh;
   }
 
   .containerSlide{
-    transform: translateY(15px);
     z-index:0;
-    padding-top:10px;
-    padding-bottom:40px;
   }
   .modal-clubQ1 , .modal-clubQ2{
     padding: 50px 10px;
@@ -564,6 +562,6 @@ footer{
   }
   .apply{
     padding:10px;
-    min-height:800px;
+    min-height: 100vh;
   }
 }
